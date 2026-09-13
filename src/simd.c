@@ -56,7 +56,7 @@ void findMinMaxSimd(const float* data, const int n, float* out_min, float* out_m
     if (data == NULL || n <= 0) return;
 
     __m256 v_min = _mm256_set1_ps(FLT_MAX);
-    __m256 v_max = _mm256_set1_ps(FLT_MIN);
+    __m256 v_max = _mm256_set1_ps(-FLT_MAX);
 
     int i = 0;
     for (; i <= n - 8; i += 8) {

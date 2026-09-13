@@ -39,6 +39,7 @@ enable_testing()
 
 add_executable(unit_tests
         tests/test_cpu.cpp
+        tests/test_simd.cpp
 )
 
 target_include_directories(unit_tests PRIVATE
