@@ -1,12 +1,5 @@
-//
-// Created by bmyhi on 13.09.2026.
-//
-
-#ifndef UNTITLED_CPU_H
-#define UNTITLED_CPU_H
-
-
-
+#ifndef MINMAX_HEADER_H
+#define MINMAX_HEADER_H
 
 void cpu(float* data, int n);
 void simd(float* data, int n);
@@ -16,4 +9,4 @@ void makeZeroSimd(float* data, int n);
 void normalizeSimd(float* data, int n, float min_val, float inv_range);
 
 
-#endif //UNTITLED_CPU_H
+#endif

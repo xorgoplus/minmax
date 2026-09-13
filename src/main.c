@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "header.h"
+#include "../include/header.h"
 
 #define DEFAULT_N (1 << 24)
 

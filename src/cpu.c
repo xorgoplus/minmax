@@ -7,7 +7,7 @@ void cpu(float* data, const int n) {
     if (data == NULL || n <= 0) return;
 
     float min_val = FLT_MAX;
-    float max_val = FLT_MIN;
+    float max_val = -FLT_MAX;
 
     for (int i = 0; i < n; i++) {
         if (data[i] < min_val) min_val = data[i];
