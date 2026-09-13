@@ -40,7 +40,7 @@ def main():
     plt.grid(True, which="both", linestyle='--', alpha=0.5)
     plt.legend(fontsize=12)
 
-
+    plt.xscale('log')
     plt.tight_layout()
     plt.savefig('performance_comparison.png', dpi=300)
     plt.show()
