@@ -4,8 +4,6 @@
 #include <float.h>
 
 void simd(float* data, const int n) {
-    printf("SIMD\n");
-
     float min_val, max_val;
 
     findMinMaxSimd(data, n, &min_val, &max_val);

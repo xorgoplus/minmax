@@ -3,7 +3,6 @@
 #include <float.h>
 
 void cpu(float* data, const int n) {
-    printf("CPU\n");
     if (data == NULL || n <= 0) return;
 
     float min_val = FLT_MAX;
