@@ -1,0 +1,1 @@
+![bench](./performance_comparison.png)
