@@ -20,8 +20,8 @@ TEST(CpuNormalizationTest, InvalidInputs) {
 }
 
 TEST(CpuNormalizationTest, StandardPositiveValues) {
-    std::vector<float> data = {10.0f, 20.0f, 30.0f, 40.0f, 50.0f};
-    std::vector<float> expected = {0.0f, 0.25f, 0.5f, 0.75f, 1.0f};
+    std::vector data = {10.0f, 20.0f, 30.0f, 40.0f, 50.0f};
+    std::vector expected = {0.0f, 0.25f, 0.5f, 0.75f, 1.0f};
 
     cpu(data.data(), static_cast<int>(data.size()));
 
@@ -31,7 +31,7 @@ TEST(CpuNormalizationTest, StandardPositiveValues) {
 }
 
 TEST(CpuNormalizationTest, AllElementsEqual) {
-    std::vector<float> data = {5.5f, 5.5f, 5.5f};
+    std::vector data = {5.5f, 5.5f, 5.5f};
 
     cpu(data.data(), static_cast<int>(data.size()));
 
@@ -49,8 +49,8 @@ TEST(CpuNormalizationTest, SingleElement) {
 }
 
 TEST(CpuNormalizationTest, NegativeAndZeroValues) {
-    std::vector<float> data = {-10.0f, -5.0f, 0.0f, 5.0f, 10.0f};
-    std::vector<float> expected = {0.0f, 0.25f, 0.5f, 0.75f, 1.0f};
+    std::vector data = {-10.0f, -5.0f, 0.0f, 5.0f, 10.0f};
+    std::vector expected = {0.0f, 0.25f, 0.5f, 0.75f, 1.0f};
 
     cpu(data.data(), static_cast<int>(data.size()));
 
@@ -60,8 +60,8 @@ TEST(CpuNormalizationTest, NegativeAndZeroValues) {
 }
 
 TEST(CpuNormalizationTest, StrictlyNegativeValues) {
-    std::vector<float> data = {-100.0f, -50.0f, -20.0f};
-    std::vector<float> expected = {0.0f, 0.625f, 1.0f};
+    std::vector data = {-100.0f, -50.0f, -20.0f};
+    std::vector expected = {0.0f, 0.625f, 1.0f};
 
     cpu(data.data(), static_cast<int>(data.size()));
 
