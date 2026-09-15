@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 EXECUTABLE_PATH = os.path.join(".", "graph", "minmax.exe")
 
-SIZES = [100_000, 500_000, 1_000_000, 5_000_000, 10_000_000, 20_000_000, 200_000_000, 500_000_000]
+SIZES = list(range(100_000_000, 500_000_001, 10_000_000))
 
 def run_benchmark(kind: str, size: int) -> float:
     cmd = [EXECUTABLE_PATH, "--kind", kind, "--size", str(size)]
