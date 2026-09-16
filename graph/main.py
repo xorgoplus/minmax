@@ -30,8 +30,8 @@ def main():
 
     plt.figure(figsize=(10, 6))
 
-    plt.plot(SIZES, cpu_times, marker='o', linewidth=2, label='CPU', color='crimson')
-    plt.plot(SIZES, simd_times, marker='s', linewidth=2, label='SIMD', color='teal')
+    plt.plot(SIZES, cpu_times, marker='o', linewidth=3, label='CPU', color='crimson')
+    plt.plot(SIZES, simd_times, marker='s', linewidth=3, label='SIMD', color='teal')
 
     plt.title('CPU vs SIMD', fontsize=14)
     plt.xlabel('(N)', fontsize=12)
